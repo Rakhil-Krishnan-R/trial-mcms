@@ -3,7 +3,7 @@ import { dbConnect } from "@/lib/db";
 import { Competition } from "@/lib/models";
 import DashboardShell from "@/components/DashboardShell";
 import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid2";
+import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
