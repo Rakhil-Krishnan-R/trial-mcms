@@ -1,6 +1,33 @@
 {
   "version": 3,
-  "middleware": {},
-  "functions": {},
-  "sortedMiddleware": []
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge/chunks/mcms-blackstone-m3_1_172d43b8._.js",
+        "server/edge/chunks/[root-of-the-server]__a0f5db7e._.js",
+        "server/edge/chunks/turbopack-mcms-blackstone-m3_1_edge-wrapper_94e91605.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^/.*$",
+          "originalSource": "/:path*"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "f6xE5TCtndCqOqwIGXx0Ma19IyW2D4uQGD0y4+K02F0=",
+        "__NEXT_PREVIEW_MODE_ID": "715fd51e5c28f002db57cf87c47851ee",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "35b1cf43ad7ba499b48b90af0b4ef6d110838e8ec22c3176f11e95b0a62e8963",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "6da5b7b9afe86cde256b75a84979cb2021ca425cefbb90ebbaf5b993c85159fa"
+      }
+    }
+  },
+  "sortedMiddleware": [
+    "/"
+  ],
+  "functions": {}
 }

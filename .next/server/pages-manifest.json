@@ -1,22 +1,5 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/admin/competitions/[id]": "pages/admin/competitions/[id].html",
-  "/admin/competitions/[id]/assign": "pages/admin/competitions/[id]/assign.html",
-  "/admin/competitions/[id]/live": "pages/admin/competitions/[id]/live.html",
-  "/admin/competitions/[id]/teams": "pages/admin/competitions/[id]/teams.html",
-  "/admin/competitions/create": "pages/admin/competitions/create.html",
-  "/admin/dashboard": "pages/admin/dashboard.html",
-  "/api/_helpers/getSession": "pages/api/_helpers/getSession.js",
-  "/admin/register": "pages/admin/register.html",
-  "/admin/login": "pages/admin/login.html",
-  "/api/auth/login": "pages/api/auth/login.js",
-  "/api/auth/logout": "pages/api/auth/logout.js",
-  "/api/auth/register": "pages/api/auth/register.js",
-  "/api/competitions": "pages/api/competitions.js",
-  "/": "pages/index.html",
-  "/manager/login": "pages/manager/login.html",
-  "/judge/login": "pages/judge/login.html",
-  "/404": "pages/404.html"
+  "/_error": "pages/_error.js"
 }

@@ -1,3 +1,0 @@
-This scaffold provides core models, auth, and admin UI pages.
-- Fill in remaining API routes for teams, courts, judge-scores, manager-timesheets, results.
-- For real-time updates consider MongoDB Change Streams + SSE or WebSockets.
