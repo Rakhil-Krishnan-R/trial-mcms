@@ -19,20 +19,35 @@ export async function setSession(payload: SessionPayload) {
     .setIssuedAt()
     .setExpirationTime("8h")
     .sign(secret);
-  cookies().set(cookieName, token, { httpOnly: true, sameSite: "lax", secure: true, path: "/" });
+
+  cookies().set(cookieName, token, {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production", // ✅ dev-safe
+    path: "/",
+    maxAge: 60 * 60 * 8, // ✅ 8h in seconds
+  });
 }
 
 export async function clearSession() {
-  cookies().set(cookieName, "", { httpOnly: true, maxAge: 0, path: "/" });
+  cookies().set(cookieName, "", {
+    httpOnly: true,
+    maxAge: 0,
+    path: "/",
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+  });
 }
-
 export async function getSession(): Promise<SessionPayload | null> {
-  const cookie = cookies().get(cookieName);
-  if (!cookie?.value) return null;
   try {
+    const cookieStore = await cookies(); // ❌ only works server-side
+    const cookie = cookieStore?.get(cookieName);
+    if (!cookie?.value) return null;
     const { payload } = await jwtVerify(cookie.value, secret);
     return payload as SessionPayload;
   } catch {
+    // fallback for client calls
     return null;
   }
 }
+

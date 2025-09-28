@@ -1,33 +1,6 @@
 {
   "pages": {
-    "/_app": [
-      "static/chunks/4b659_next_dist_compiled_next-devtools_index_87d867ce.js",
-      "static/chunks/4b659_next_dist_compiled_110c49e3._.js",
-      "static/chunks/4b659_next_dist_shared_lib_88d9d0cd._.js",
-      "static/chunks/4b659_next_dist_client_df454299._.js",
-      "static/chunks/4b659_next_dist_15df51de._.js",
-      "static/chunks/4b659_next_app_8decfa77.js",
-      "static/chunks/[next]_entry_page-loader_ts_5eaa523d._.js",
-      "static/chunks/4b659_react-dom_708929fb._.js",
-      "static/chunks/4b659_25d4cc99._.js",
-      "static/chunks/[root-of-the-server]__d3bfae05._.js",
-      "static/chunks/mcms-blackstone-m3_1_pages__app_2da965e7._.js",
-      "static/chunks/turbopack-mcms-blackstone-m3_1_pages__app_1969f7cb._.js"
-    ],
-    "/_error": [
-      "static/chunks/4b659_next_dist_compiled_next-devtools_index_87d867ce.js",
-      "static/chunks/4b659_next_dist_compiled_110c49e3._.js",
-      "static/chunks/4b659_next_dist_shared_lib_9d5a73b3._.js",
-      "static/chunks/4b659_next_dist_client_df454299._.js",
-      "static/chunks/4b659_next_dist_c8e2f328._.js",
-      "static/chunks/4b659_next_error_e61568a0.js",
-      "static/chunks/[next]_entry_page-loader_ts_69a5b836._.js",
-      "static/chunks/4b659_react-dom_708929fb._.js",
-      "static/chunks/4b659_25d4cc99._.js",
-      "static/chunks/[root-of-the-server]__29b0ccc9._.js",
-      "static/chunks/mcms-blackstone-m3_1_pages__error_2da965e7._.js",
-      "static/chunks/turbopack-mcms-blackstone-m3_1_pages__error_6101e478._.js"
-    ]
+    "/_app": []
   },
   "devFiles": [],
   "ampDevFiles": [],
