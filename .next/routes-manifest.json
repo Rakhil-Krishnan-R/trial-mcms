@@ -1,0 +1,119 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/competitions/[id]",
+      "regex": "^/admin/competitions/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/competitions/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/competitions/[id]/assign",
+      "regex": "^/admin/competitions/([^/]+?)/assign(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/competitions/(?<nxtPid>[^/]+?)/assign(?:/)?$"
+    },
+    {
+      "page": "/admin/competitions/[id]/live",
+      "regex": "^/admin/competitions/([^/]+?)/live(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/competitions/(?<nxtPid>[^/]+?)/live(?:/)?$"
+    },
+    {
+      "page": "/admin/competitions/[id]/teams",
+      "regex": "^/admin/competitions/([^/]+?)/teams(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/competitions/(?<nxtPid>[^/]+?)/teams(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/admin/competitions/create",
+      "regex": "^/admin/competitions/create(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/competitions/create(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin/login",
+      "regex": "^/admin/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/login(?:/)?$"
+    },
+    {
+      "page": "/admin/register",
+      "regex": "^/admin/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/register(?:/)?$"
+    },
+    {
+      "page": "/judge/login",
+      "regex": "^/judge/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/judge/login(?:/)?$"
+    },
+    {
+      "page": "/manager/login",
+      "regex": "^/manager/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/manager/login(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
